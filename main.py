@@ -12,6 +12,10 @@ https://www.figma.com/design/owR7KFdx95WTPTqCreb12p/Untitled?node-id=0-1&t=v6Ncs
 """
 
 # Explicit imports to satisfy Flake8
+"""
+Alot of this code unironically, is from the import. Im doing research to understand what frameworks are used and to see if I can add anything to this code using them.
+"""
+
 from tkinter import Tk, Canvas, Text, Button, PhotoImage
 
 OUTPUT_PATH = Path(__file__).parent

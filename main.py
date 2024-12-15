@@ -13,7 +13,7 @@ https://www.figma.com/design/owR7KFdx95WTPTqCreb12p/Untitled?node-id=0-1&t=v6Ncs
 
 # Explicit imports to satisfy Flake8
 """
-Alot of this code unironically, is from the import. Im doing research to understand what frameworks are used and to see if I can add anything to this code using them.
+Alot of this code unironically, is from the import. Im doing research to understand what frameworks are used and to see if I can add anything to this code using the
 """
 
 from tkinter import Tk, Canvas, Text, Button, PhotoImage
@@ -26,7 +26,7 @@ def relative_to_assets(path: str) -> Path:
 
 # Initialize main Tkinter window
 window = Tk()
-window.geometry("700x400")
+window.geometry("589x335")
 window.configure(bg="#FFFFFF")
 
 canvas = Canvas(
@@ -46,7 +46,7 @@ canvas.create_rectangle(
 canvas.create_rectangle(
     294.0, 4.0, 589.0, 335.0, fill="#282828", outline="")  # Rectangle 2
 canvas.create_rectangle(
-    302.0, 16.0, 581.0, 329.0, fill="#202020", outline="")
+    302.0, 16.0, 540.0, 329.0, fill="#202020", outline="")
 canvas.create_rectangle(
     0.0, 4.0, 294.0, 41.0, fill="#535353", outline="")  # Rectangle 1
 
@@ -63,12 +63,12 @@ keystroke_output = Text(
     font=("Helvetica", 10),
     relief="flat"
 )
-keystroke_output.place(x=302, y=16, width=279, height=313)
+keystroke_output.place(x=302, y=16, width=250, height=313)
 
 # Scroll functionality using Rectangle 1
-scrollbar = Scrollbar(window, orient=VERTICAL, command=keystroke_output.yview)
+scrollbar = Scrollbar(window, orient=VERTICAL, command=keystroke_output.yview,)
 keystroke_output.config(yscrollcommand=scrollbar.set)
-scrollbar.place(x=581, y=16, height=313)
+scrollbar.place(x=570, y=16, height=313)
 
 # Function to capture keystrokes and display them
 
@@ -78,7 +78,7 @@ def keyPressed(key):
         keystroke_output.insert(END, char)  
         keystroke_output.see(END)  # Auto-scroll to the end
     except AttributeError:
-        special_key = f"[{key}]"
+        special_key = f"    [{key}]    "
         keystroke_output.insert(END, special_key)  # Handle special keys
         keystroke_output.see(END)
 

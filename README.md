@@ -16,3 +16,7 @@ Im planning to add a few hyperlinks to the left side of the scuffed UI or I migh
 Another issue to note that ive found is that if a user clicks on the output box their output will be doubled, this is due to the rectangle not being disabled for user input. 
 
 Issue is... my solution of disabling the box just wont work so yeah. Fun.
+
+## Upddate 3 Return
+
+Going to rewrite this code with a sleek UI hopefully, but for now to fill up some sort of activity a requirements file will be added!

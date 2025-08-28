@@ -17,6 +17,6 @@ Another issue to note that ive found is that if a user clicks on the output box 
 
 Issue is... my solution of disabling the box just wont work so yeah. Fun.
 
-## Upddate 3 Return
+## Update 3 Return
 
 Going to rewrite this code with a sleek UI hopefully, but for now to fill up some sort of activity a requirements file will be added!

